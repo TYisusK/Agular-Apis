@@ -4,12 +4,11 @@
         <p class="description">
             Somos una empresa comprometida con la innovación y la calidad. Explora nuestro sitio para conocer más sobre nuestros servicios y productos.
         </p>
-
-        <!-- Botones de Navegación con Click -->
-        <div class="d-flex flex-wrap gap-3 mt-4">
-            <button class="btn btn-primary" (click)="goTo('/pagina1')"> Categorías de Comida</button>
-            <button class="btn btn-success" (click)="goTo('/pagina2')"> Platillos con Pollo</button>
-            <button class="btn btn-warning" (click)="goTo('/pagina3')"> Tu Próximo Platillo Favorito</button>
-        </div>
+        <nav class="nav-buttons">
+            <!-- Mantenemos el diseño y agregamos lógica de navegación -->
+            <button class="btn" (click)="goTo('/pagina1')">Categorías de Comida</button>
+            <button class="btn" (click)="goTo('/pagina2')">Para los Amantes del Pollo</button>
+            <button class="btn" (click)="goTo('/pagina3')">Tu Próximo Platillo Favorito</button>
+        </nav>
     </div>
 </div>
