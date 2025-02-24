@@ -1,0 +1,46 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Título */
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #6c4f37; /* Color café */
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Lista de categorías */
+.category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Item de la categoría */
+.category-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;  /* Limita el ancho máximo */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.

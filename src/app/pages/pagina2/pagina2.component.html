@@ -1,0 +1,15 @@
+<h5 class="title">Platillos con Pollo</h5>
+
+<ul class="meal-list">
+    @for(post of meals; track post.idMeal) {
+        <li class="meal-item">
+            <div class="meal-card">
+                <img [src]="post.strMealThumb" alt="{{ post.strMeal }}" class="meal-image">
+                <div class="meal-details">
+                    <h5 class="meal-name">{{ post.strMeal }}</h5>
+                    <p class="meal-id">ID: {{ post.idMeal }}</p>
+                </div>
+            </div>
+        </li>
+    }
+</ul>

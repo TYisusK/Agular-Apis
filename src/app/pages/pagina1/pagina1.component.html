@@ -1,0 +1,11 @@
+<h5 class="title">Categorías de Comida</h5>
+
+<ul class="category-list">
+    @for(post of data; track post.idCategory) {
+        <li class="category-item">
+            <h5 class="category-title">{{ post.idCategory }} - {{ post.strCategory }}</h5>
+            <img [src]="post.strCategoryThumb" alt="{{ post.strCategory }}" class="category-image">
+            <p class="category-description">{{ post.strCategoryDescription }}</p>
+        </li>
+    }
+</ul>

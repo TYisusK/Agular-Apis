@@ -1,0 +1,46 @@
+/* Fondo del menú de navegación */
+.navbar {
+    background-image: url('https://images.pexels.com/photos/172292/pexels-photo-172292.jpeg?cs=srgb&dl=pexels-fwstudio-33348-172292.jpg&fm=jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    border-bottom: 1px solid #6C4F37; /* Límite de color café */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar */
+    height: 80px; /* Ajustamos la altura del menú */
+    padding-top: 10px; /* Añadimos espacio extra en la parte superior */
+    padding-bottom: 0px; /* Añadimos espacio extra en la parte inferior */
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.2); /* Hover suave */
+    border-radius: 5px;
+}
+
+/* Alineación de los elementos de la barra de navegación */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}

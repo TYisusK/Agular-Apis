@@ -1,0 +1,23 @@
+<h5 class="title">Platillo Aleatorio</h5>
+
+<div *ngIf="meal" class="meal-card">
+    <h5 class="meal-title">{{ meal.strMeal }}</h5>
+    <img [src]="meal.strMealThumb" alt="{{ meal.strMeal }}" class="meal-image">
+    
+    <div class="meal-details">
+        <p><strong>Categoría:</strong> {{ meal.strCategory }}</p>
+        <p><strong>Origen:</strong> {{ meal.strArea }}</p>
+        <p><strong>Instrucciones:</strong> <span class="meal-instructions">{{ meal.strInstructions }}</span></p>
+        
+        <h6>Ingredientes:</h6>
+        <ul class="ingredients-list">
+            <ng-container *ngFor="let i of [].constructor(20); let idx = index">
+                <ng-container *ngIf="meal['strIngredient' + (idx + 1)] && meal['strIngredient' + (idx + 1)].trim() !== ''">
+                    <li class="ingredient-item">{{ meal['strIngredient' + (idx + 1)] }} - {{ meal['strMeasure' + (idx + 1)] }}</li>
+                </ng-container>
+            </ng-container>
+        </ul>
+        
+        <a *ngIf="meal.strYoutube" class="youtube-link" [href]="meal.strYoutube" target="_blank">Ver receta en YouTube</a>
+    </div>
+</div>

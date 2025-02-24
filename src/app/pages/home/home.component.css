@@ -1,0 +1,94 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7; /* Fondo gris suave */
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Fondo blanco */
+    padding: 0 20px;
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #6c4f37; /* Borde fino color café */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #6c4f37; /* Color café */
+    margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+    font-size: 1.2rem;
+    color: #6c4f37; /* Color café */
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #6c4f37; /* Color café */
+    border: 1px solid #6c4f37; /* Borde café */
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #6c4f37;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
